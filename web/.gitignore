@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production Output
+dist/
+dist-ssr/
+
+# Local Environment
+.env
+.env.local
+.env.*.local
+
+# Cache & Editor
+.vite/
+.DS_Store
+Thumbs.db
+*.log
+

@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production Build
+dist/
+build/
+
+# Environment & Local Configuration
+.env
+.env.local
+.env.*.local
+
+# Vite & Bundler Caches
+.vite/
+
+# Hardware Simulation Artifacts & Temp Files
+*.vcd
+*.wdb
+*.log
+*.jou
+xsim.dir/
+.Xil/
+webtalk*
+usage_statistics*
+
+# Operating System Files
+Thumbs.db
+.DS_Store
+*.swp
+*~
+

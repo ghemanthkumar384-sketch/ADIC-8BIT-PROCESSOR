@@ -1,0 +1,274 @@
+{
+  "report_version": "1.0.0",
+  "project": "ADIC_8BIT_PROCESSOR",
+  "timestamp_utc": "2026-10-29T19:26:36.272871+00:00",
+  "summary": {
+    "total_assertions": 32,
+    "passed_assertions": 32,
+    "failed_assertions": 0,
+    "pass_rate": "100.0%",
+    "overall_status": "PASS"
+  },
+  "hdl_simulation": {
+    "status": "UNAVAILABLE",
+    "executed": false,
+    "simulator": "Xilinx Vivado (XSim)",
+    "log_available": false,
+    "message": "Physical HDL simulation was not executed locally because Xilinx Vivado is not installed on this host system. Automated scripts (sim/run_simulation.tcl and sim/run_vivado.bat) are prepared and verified for lab execution.",
+    "known_limitations": [
+      "Xilinx Vivado is not present in the system PATH on this host.",
+      "HDL gate-level synthesis and timing waveforms require an installed copy of Vivado Design Suite.",
+      "The web dashboard simulation is an educational cycle-accurate model and does not run Verilog natively in the browser."
+    ]
+  },
+  "reference_model": {
+    "status": "PASSED",
+    "executed": true,
+    "engine": "Python 3.14.6 Cycle-Accurate Co-Simulator",
+    "source_script": "sim/reference_simulation.py",
+    "exit_code": 0,
+    "disclaimer": "This reference model verifies the microarchitectural mathematical specification, but must not be treated as proof that the Verilog RTL passed physical simulation in an EDA simulator.",
+    "assertions": [
+      {
+        "name": "Reset PC",
+        "group": "Synchronous Reset",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "Reset IF/ID Valid",
+        "group": "Synchronous Reset",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "Reset ID/EX Valid",
+        "group": "Synchronous Reset",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "Reset Register R0",
+        "group": "Synchronous Reset",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "Reset Register R1",
+        "group": "Synchronous Reset",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "Reset Register R2",
+        "group": "Synchronous Reset",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "Reset Register R3",
+        "group": "Synchronous Reset",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "Reset Register R4",
+        "group": "Synchronous Reset",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "Reset Register R5",
+        "group": "Synchronous Reset",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "Reset Register R6",
+        "group": "Synchronous Reset",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "Reset Register R7",
+        "group": "Synchronous Reset",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "Cycle 3 Forwarding A Active (R1 hazard)",
+        "group": "Pipeline Data Forwarding",
+        "expected": 1,
+        "actual": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "Cycle 3 Forwarded ALU Value",
+        "group": "Pipeline Data Forwarding",
+        "expected": 5,
+        "actual": 5,
+        "status": "PASS"
+      },
+      {
+        "name": "Cycle 4 Forwarding B Active (R2 hazard)",
+        "group": "Pipeline Data Forwarding",
+        "expected": 1,
+        "actual": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "Cycle 4 Forwarded ALU Value",
+        "group": "Pipeline Data Forwarding",
+        "expected": 8,
+        "actual": 8,
+        "status": "PASS"
+      },
+      {
+        "name": "Cycle 5 Forwarding A Active (R3 hazard)",
+        "group": "Pipeline Data Forwarding",
+        "expected": 1,
+        "actual": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "Cycle 5 Forwarded ALU Value",
+        "group": "Pipeline Data Forwarding",
+        "expected": 13,
+        "actual": 13,
+        "status": "PASS"
+      },
+      {
+        "name": "Register R0 Value",
+        "group": "Final Register State",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "Register R1 Value",
+        "group": "Final Register State",
+        "expected": 5,
+        "actual": 5,
+        "status": "PASS"
+      },
+      {
+        "name": "Register R2 Value",
+        "group": "Final Register State",
+        "expected": 8,
+        "actual": 8,
+        "status": "PASS"
+      },
+      {
+        "name": "Register R3 Value",
+        "group": "Final Register State",
+        "expected": 13,
+        "actual": 13,
+        "status": "PASS"
+      },
+      {
+        "name": "Register R4 Value",
+        "group": "Final Register State",
+        "expected": 8,
+        "actual": 8,
+        "status": "PASS"
+      },
+      {
+        "name": "Register R5 Value",
+        "group": "Final Register State",
+        "expected": 8,
+        "actual": 8,
+        "status": "PASS"
+      },
+      {
+        "name": "Register R6 Value",
+        "group": "Final Register State",
+        "expected": 13,
+        "actual": 13,
+        "status": "PASS"
+      },
+      {
+        "name": "Register R7 Value",
+        "group": "Final Register State",
+        "expected": 5,
+        "actual": 5,
+        "status": "PASS"
+      },
+      {
+        "name": "Addition Overflow Wrap (255 + 1 mod 256)",
+        "group": "8-Bit Modulo Arithmetic",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "Subtraction Borrow Wrap (0 - 1 mod 256)",
+        "group": "8-Bit Modulo Arithmetic",
+        "expected": 255,
+        "actual": 255,
+        "status": "PASS"
+      },
+      {
+        "name": "Re-Reset PC Cleared",
+        "group": "Dynamic Reset Recovery",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "Re-Reset IF/ID Valid Cleared",
+        "group": "Dynamic Reset Recovery",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "Re-Reset ID/EX Valid Cleared",
+        "group": "Dynamic Reset Recovery",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "Re-Reset Register R1 Cleared",
+        "group": "Dynamic Reset Recovery",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      },
+      {
+        "name": "Re-Reset Register R7 Cleared",
+        "group": "Dynamic Reset Recovery",
+        "expected": 0,
+        "actual": 0,
+        "status": "PASS"
+      }
+    ]
+  },
+  "educational_browser_model": {
+    "status": "ACTIVE",
+    "environment": "React 18 / Vite 5 Dashboard",
+    "demonstration_cycles": 12,
+    "golden_registers": [
+      0,
+      5,
+      8,
+      13,
+      8,
+      8,
+      13,
+      5
+    ],
+    "r0_zero_protection_enforced": true
+  }
+}
